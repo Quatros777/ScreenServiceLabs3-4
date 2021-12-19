@@ -1,20 +1,20 @@
 <?php
 
-require_once "database/UserPdo.php";
-require_once "Validation.php";
+require_once "db/UserPDO.php";
+
 
 header('Content-Type: application/json');
 
 $request = $_POST;
 
-$errors = Validation::validateAuthRequest($request);
+
 
 if (!empty($errors)) {
     echo json_encode(['errors' => $errors], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
-$userPdo = new UserPdo();
+$userPdo = new UserPDO();
 
 $user = $userPdo->getUserByLogin($request['login']);
 if ($user == false) {
