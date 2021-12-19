@@ -9,7 +9,7 @@ $request = $_POST;
 
 
 try {
-    $userPdo = new UserPdo();
+    $userPdo = new UserPDO();
 
     if (!$userPdo->IsEmailUnique($request['email'])) {
         $errors[] = "Пользователь с данной почтой уже существует!";
