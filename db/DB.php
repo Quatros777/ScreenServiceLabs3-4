@@ -13,7 +13,7 @@ class DB
     {
         try {
             if (!($config = parse_ini_file("config/config.ini"))) {
-                throw new Exception("Ошибка при парсинге файла конфигурации", 1);
+                throw new Exception("Ошибка!", 1);
             }
 
             $this->pdo = new PDO('mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'], $config['login'], $config['password']);
