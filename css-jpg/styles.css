@@ -1,0 +1,240 @@
+.header {
+    height: 7vw;
+    width: auto;
+    width: auto;
+    background:  linear-gradient(to right, #ffffff 56%, #ccccff 100%);
+
+}
+
+.headertext{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 2%;
+    font-size: 2.8vw;
+    font-family: "Courier New";
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ccccff, 0 0 30px #ccccff, 0 0 40px #ccccff, 0 0 55px #ccccff, 0 0 75px #ccccff;
+}
+
+.main {
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 42vw;
+    background:  linear-gradient(to right, #ffffff 62%, #ccccff 95%);
+    object-fit: cover;
+}
+.fooder {
+    margin-top: 1%;
+    height: 8vw;
+    background:  linear-gradient(to right, #ffffff 72%, #ccccff 90%);
+
+}
+
+.textforheader3{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 2%;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7vw;
+}
+
+.textforheader2 {
+    position: absolute;
+    margin-left: 88%;
+    margin-top: 2%;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7vw;
+}
+
+.textforheader1 {
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 2%;
+    font-family: Courier New;
+    font-weight: normal;
+    font-size: 1.7vw;
+}
+
+
+#login{
+    position: absolute;
+    top: 0px;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.8);
+    box-shadow:
+            0pt 2px 5px rgba(105, 108, 109,  0.7),
+            0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    border-radius: 5px;
+    z-index: 22;
+}
+
+* {box-sizing: border-box}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: transparent;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1vw;
+
+}
+
+button:hover {
+    opacity:1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    font-size: 1vw;
+    background-color: #9999ff;
+    opacity: 0.7;
+}
+
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 100%;
+
+}
+
+.container {
+    padding: 16px;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#Img1{
+    margin-left: 3.6%;
+}
+
+#Img5{
+    margin-left: 3.6%;
+}
+
+#Img1:hover {opacity: 0.7;}
+#Img2:hover {opacity: 0.7;}
+#Img3:hover {opacity: 0.7;}
+#Img4:hover {opacity: 0.7;}
+#Img5:hover {opacity: 0.7;}
+#Img6:hover {opacity: 0.7;}
+#Img7:hover {opacity: 0.7;}
+#Img8:hover {opacity: 0.7;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(198, 198, 212, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: 1px solid #282727;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #000000;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.foodertext{
+    text-align: center;
+    font-family: Courier New;
+    font-weight: normal;
+    font-size: 1.2vw;
+    padding-top: 1.9%;
+    color: #000000;
+}
+
+a[href^="mailto:"] {
+    text-align: center;
+    padding-left: 44%;
+    padding-top: 3%;
+    font-size: 0.9vw;
+    color: #0e0909;
+    font-family: Courier New;
+    text-decoration: none;
+    font-weight: 600;
+}
