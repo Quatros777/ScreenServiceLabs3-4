@@ -1,18 +1,12 @@
 <?php
 
-require_once "database/UserPdo.php";
-require_once "Validation.php";
+require_once "db/UserPDO.php";
+
 
 header('Content-Type: application/json');
 
 $request = $_POST;
 
-$errors = Validation::validateRegisterRequest($request);
-
-if (!empty($errors)) {
-    echo json_encode(['errors' => $errors], JSON_UNESCAPED_UNICODE);
-    exit;
-}
 
 try {
     $userPdo = new UserPdo();
