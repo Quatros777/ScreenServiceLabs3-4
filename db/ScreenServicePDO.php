@@ -2,7 +2,7 @@
 
 require_once "DB.php";
 
-class ScreenshotPdo extends DB
+class ScreenServicePDO extends DB
 {
 
     public function getScreenshots($id)
