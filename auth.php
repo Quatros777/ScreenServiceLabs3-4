@@ -7,13 +7,6 @@ header('Content-Type: application/json');
 
 $request = $_POST;
 
-
-
-if (!empty($errors)) {
-    echo json_encode(['errors' => $errors], JSON_UNESCAPED_UNICODE);
-    exit;
-}
-
 $userPdo = new UserPDO();
 
 $user = $userPdo->getUserByLogin($request['login']);
