@@ -2,7 +2,7 @@
 
 require_once "DB.php";
 
-class UserPdo extends DB
+class UserPDO extends DB
 {
 
     public function save($user)
